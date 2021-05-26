@@ -61,7 +61,7 @@ def _preprocess_data(data):
     # ----------- Replace this code with your own preprocessing steps --------
 
     feature_vector_df = feature_vector_df[(feature_vector_df['Commodities'] == 'APPLE GOLDEN DELICIOUS')]
-    predict_vector = feature_vector_df[['Total_Qty_Sold','Stock_On_Hand']]
+    predict_vector = feature_vector_df[['Total_Qty_Sold','Stock_On_Hand','Low_Price','Weight_Kg']]
                         
     # ------------------------------------------------------------------------
 
