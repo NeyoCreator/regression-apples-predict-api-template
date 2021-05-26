@@ -31,7 +31,7 @@ app = Flask(__name__)
 # Please update this path to reflect your own trained model.
 static_model = load_model(
     #changed to our model
-    path_to_model='assets/trained-models/model.pkl')
+    path_to_model='assets/trained-models/linear_model.pkl')
 
 print ('-'*40)
 print ('Model succesfully loaded')
