@@ -60,12 +60,20 @@ def _preprocess_data(data):
 
     # ----------- Replace this code with your own preprocessing steps --------
 
+    from sklearn.preprocessing import StandardScaler
+
     feature_vector_df = feature_vector_df[(feature_vector_df['Commodities'] == 'APPLE GOLDEN DELICIOUS')]
     predict_vector = feature_vector_df[['Weight_Kg','Low_Price']]
+
+    scaler = StandardScaler()
+    X_Scaled = scaler.fit_transform(predict_vector)
+
+    
+
                         
     # ------------------------------------------------------------------------
 
-    return predict_vector
+    return X_Scaled
 
 def load_model(path_to_model:str):
     """Adapter function to load our pretrained model into memory.
