@@ -68,8 +68,6 @@ def _preprocess_data(data):
     scaler = StandardScaler()
     X_Scaled = scaler.fit_transform(predict_vector)
 
-    
-
                         
     # ------------------------------------------------------------------------
 
