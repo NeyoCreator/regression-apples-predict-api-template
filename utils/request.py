@@ -55,3 +55,4 @@ print(f"The response took: {api_response.elapsed.total_seconds()} seconds")
 print("*"*50)
 
 #Desktop\API>cd regression-apples-predict-api-template
+#ssh explore-student@176.34.128.83
